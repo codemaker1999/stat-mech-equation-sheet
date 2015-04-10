@@ -1,10 +1,7 @@
 Algos
 ------
 
-* use f, N and g to derive U, S, F, ...
-
-* get P from F
-
+* f,N,g=>U=>S=>F=>P,Cv
 
 Dists
 ------
