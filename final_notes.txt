@@ -1,0 +1,25 @@
+Algos
+------
+
+* use f, N and g to derive U, S, F, ...
+
+* get P from F
+
+
+Dists
+------
+
+* B - dist, no PEP
+
+* MB - gas approx, 
+
+* FD - indist, yes PEP
+
+* BE - indist, no PEP
+
+
+Misc
+-----
+
+* for BEC, mu -> 0 as T -> 0
+

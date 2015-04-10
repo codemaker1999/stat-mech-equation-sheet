@@ -1,0 +1,323 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{multicol}
+
+\pagenumbering{gobble}
+\geometry{total={8.5in,11in}, margin=0.5in}
+\setlength{\columnseprule}{0.2pt}
+
+\author{John Meade}
+
+\begin{document}
+\begin{multicols}{3}
+\noindent
+\fontsize{10}{12}\selectfont
+
+$TdS=dU+PdV-\mu dN$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Boltzmann}$
+
+$\omega_j = \frac{N! g_j^{N_j}}{N_j! (N - N_j)!}$
+
+$\omega_B = N! \prod \frac{g_j^{N_j}}{N_j!}$
+
+$f_j = \frac{N_j}{g_j}=\frac{N}{Z}e^{- \epsilon_j / kT}$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Maxwell-Boltzmann}$
+
+$\omega_j = \frac{g_j^{N_j}}{N_j!}$
+
+$\omega_{MB} = \prod \frac{g_j^{N_j}}{N_j!}$
+
+$f_j=\frac{N}{Z}e^{- \epsilon_j / kT}=(e^{(\epsilon_j-\mu)/kT})^{-1}$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Fermi-Dirac}$
+
+$\omega_j = \frac{g_j!}{N_j! (g_j - N_j)!}$
+
+$\omega_{FD} = \prod \frac{g_j!}{N_j!(g_j - N_j)!}$
+
+$f_j = (e^{(\epsilon_j - \mu)/kT}+1)^{-1}$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Bose-Einstein}$
+
+$\omega_j = \frac{(N_j+g_j-1)!}{N_j!(g_j-1)!}$
+
+$\omega_{BE}=\prod \frac{(N_j+g_j-1)!}{N_j!(g_j-1)!}$
+
+$f_j=(e^{(\epsilon_j - \mu)/kT}-1)^{-1}$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Derive Distribution}$
+
+$\ln(N!) \approx N\ln(N)-N$
+
+$0 = \frac{\partial}{\partial N_j}(\ln(\omega) + \alpha ( \sum N_j - N) + \beta (\sum \epsilon_j N_j - U))$
+
+$\alpha, \beta : TdS=dU+PdV-\mu dN$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Derive Density of States}$
+
+$n^2=\left (\frac{8mV^{-2/3}}{h^2} \right )\epsilon \equiv R^2$
+
+$\:n=\frac{1}{8}\frac{4\pi R^3}{3}$
+
+$g(\epsilon)d\epsilon = \gamma_s \frac{dn}{d\epsilon}d\epsilon$
+
+$g(\epsilon)d\epsilon = \gamma_s \frac{4 \sqrt{2} \pi V}{h^3} m^{3/2}\epsilon^{1/2} d\epsilon$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Mash / Definitions}$
+
+$\Delta \ln(\omega) = \ln(\omega_f / \omega_i)$
+
+$\Delta \ln(\omega)=-\frac{\mu}{kT}\Delta N$
+
+B: $U=\sum N_j \epsilon_j = \frac{N}{Z} \sum g_j \epsilon_j e^{-\epsilon_j / kT}$
+
+$\omega_B=N!\: \omega_{MB}$
+
+$\frac{1}{y} \frac{dy}{dx} = \frac{d\ln(y)}{dx}$
+
+$\epsilon_j=n_j^2 \frac{\pi^2 \hbar^2}{2mV^{2/3}}$
+
+$P=-\left (\frac{\partial F}{\partial V}\right )_T$
+
+$F\equiv U-TS$
+
+$F=^? -NkT\:\ln Z$
+
+$H \equiv U+PV = G+TS$
+
+$G \equiv U-TS+PV = H-TS$
+
+Single Comp Sys:$\:G=\mu N$
+
+$\mu = \left ( \frac{\partial F}{\partial N} \right )_{T,V}$
+
+B: $p_j=\frac{N_j}{N}=\frac{g_j}{Z}e^{\beta \epsilon_j}$
+
+$\bar{E}=\sum p_j E_j$
+
+$C_V=\frac{\partial U}{\partial T}$
+
+$U=d_{free}NkT/2$
+
+$S=\int_0^T \frac{C_V dT'}{T'}$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Ideal Gas}$
+
+$\omega_{BE}> \omega_{MB} > \omega_{FD}$
+
+$FD,BE \rightarrow MB$
+
+$[N,T,Z,\ln(Z)]$
+
+$MB \implies S,F,\mu$
+
+$S=\frac{U}{T}+Nk (1-\ln( \frac{N}{Z} ) )$
+
+$F=NkT (\ln ( \frac{N}{Z} ) -1 )$
+
+$\mu=kT \ln ( \frac{N}{Z} )$
+
+Z: $\gamma_s=1$
+
+$Z=V(2\pi mkT/h^2)^{3/2}=Vn_Q$
+
+$\ln(Z)=\frac{3}{2}\ln(T)+\ln(V)+\frac{3}{2}\ln \left ( \frac{2 \pi m k}{h^2} \right )$
+
+$PV=NkT$
+
+$U=\frac{3}{2}NkT$
+
+lim: $\lambda_{dB}^3<<\frac{V}{N}$,$\:\lambda_{dB} \equiv \left ( \frac{h^2}{2 \pi mkT} \right )^{1/2}$, $\: (\frac{V}{N})^{1/3}=l\equiv 
+d_{avg}$
+
+MSD: $g(\epsilon)d\epsilon, Z, \epsilon \rightarrow \frac{1}{2}mv^2$
+
+$\implies N(\epsilon)d\epsilon=4\pi N \left (\frac{m}{2\pi kT} \right )^{3/2} v^2 e^{-mv^2 /2kT}dv$
+
+$\Delta\omega_{mix}=\frac{\omega_2}{\omega_1}=\frac{N!}{N_1! N_2!}$,
+
+$\Delta S=...=-Nk(x_1 \ln(x_1) + x_2 \ln(x_2) )$
+
+$Z_{mono}=Z_{trans}$
+
+$Z_{dia }=Z_{trans}Z_{vib}Z_{rot}$
+
+$Z_{vib }=\frac{exp(-\theta^{vib}/2T)}{1-exp(-\theta^{vib}/2T)}$
+
+$Z_{rot }=\frac{T}{\theta^{rot}}$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Oscillations}$
+
+$\epsilon_j=(j+\frac{1}{2})h\nu$
+
+$\theta_{vib}=\frac{h\nu}{k}$
+
+$\theta_{vib,H2}=6000$K
+
+$\implies Z_{vib}$
+
+$U_{vib}=NkT^2\frac{\partial \ln(Z)}{\partial T}=Nk\theta(\frac{1}{2}+\frac{1}{exp(\theta/T)-1})$
+
+$\approx NkT, \frac{T}{\theta}>>1$
+
+$T>>1 \implies C_V=Nk$
+
+$T<<1 \implies C_V=Nk(\frac{\theta}{T})^2 e^{-\theta/T}$
+
+localized, dist $\implies$ Boltzmann, $\:g_j=1$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Rotations}$
+
+$\epsilon_j=j(j+1)\frac{\hbar^2}{2I}$
+
+$\theta_{rot}=\frac{\hbar^2}{2Ik}$
+
+$\theta_{rot,H2}=80$K
+
+$g_j=2j+1$
+
+$T>>\theta_{rot}$
+
+$\implies Z=\frac{T}{\theta_{rot}}$
+
+$\implies U_{rot}=NkT$
+
+$\implies C_{V,rot}=Nk$
+
+$T<<\theta_{rot}$
+
+$\implies \ln(Z)\approx \ln(1+3e^{-2\theta_{rot}/T})\approx 3e^{-2\theta_{rot}/T}$
+
+$\implies U=6Nk\theta_{rot}e^{-2\theta_{rot}/T}$
+
+$\implies C_{V,rot}=3Nk(\frac{2\theta_{rot}}{T})^2 e^{-2\theta_{rot}/T}$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Einstein Solids}$
+
+$F= -NkT\:\ln Z$
+
+$S=\frac{U}{T} + 3Nk \;\ln Z$
+
+$\theta_E = h \nu / k, \:\:\nu = \frac{1}{2 \pi} \sqrt{\frac{\kappa}{\mu}}$
+
+$U=3Nk\theta_E (\frac{1}{2}+\frac{1}{e^{\theta_E/T}-1})$
+
+$T>>\theta_E \implies C_V \approx 3Nk$
+
+$T<<\theta_E \implies C_V \approx 3Nk(\theta_E/T)^2 e^{-\theta_E/T}$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Debye}$
+
+$g(\nu)d\nu=4\pi V\left[ \frac{1}{c_l^3} + \frac{2}{c_t^3} \right] \nu^2d\nu$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Fermi Energy}$
+
+$\mu(0)=\frac{h^2}{2m} \left( \frac{3N}{8\pi V} \right)^{2/3}$
+
+$\epsilon_F=k T_F$
+
+$T<<T_F \implies \mu \approx \mu(0) \left ( 1-\frac{\pi^2}{12} \left[ \frac{T}{T_F} \right]^2 \right)$
+
+High T $\implies$ Ideal Gas
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Blackbody}$
+
+$f_j=\frac{1}{e^{\epsilon_j/kT}-1}$
+
+Two polarization states $\implies g(\nu)d\nu=\frac{8\pi V}{c^3}\nu^2d\nu$
+
+Planck Radiation $u(\nu)d\nu=g(\nu)f(h\nu)h\nu d\nu$
+
+$\implies u(\nu)d\nu=\frac{8\pi h V}{c^3} \left ( \frac{\nu^3 d\nu}{e^{h\nu /kT}-1} \right )$
+
+$\implies u(\lambda)d\lambda=8\pi hcV \left ( \frac{d\lambda}{\lambda^5 (e^{h\nu /kT}-1)} \right )$
+
+$\nu=c/\lambda \implies d\nu=(-c/\lambda^2)d\lambda$
+
+$\lambda_{max}$ defined by 0=$\frac{d}{d\lambda}[\lambda^5(e^{hc/\lambda kT}-1)]$
+
+$\implies \lambda_{max}T=2.90 \times 10^{-3}$
+
+$hc/\lambda kT >> 1$
+
+$\implies u(\lambda)d\lambda=V\frac{8\pi kT}{\lambda^4}d\lambda$
+
+$hc/\lambda kT << 1$
+
+$\implies u(\lambda)d\lambda=V\frac{8\pi hc}{\lambda^5}e^{-hc/\lambda kT}d\lambda$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{Photon Gas}$
+
+$N=2.02\times 10^7 T^3 V$
+
+$U=7.55\times 10^{-16}T^4V$
+
+$S=\frac{32\pi^5 kV}{45}\left ( \frac{kT}{hc} \right ) ^3$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\textbf{BE Condensation}$
+
+$N=\int_0^\infty N(\epsilon)d\epsilon = \int_0^\infty f(\epsilon)g(\epsilon)d\epsilon$
+
+$\implies N_{ex}=2.612 V \left ( \frac{2\pi mkT}{h^2} \right )^{3/2}$, this also gives $T_B$ when $N_{ex}=N$
+
+$U=0.77 NkT \left ( \frac{T}{T_B}  \right )^{3/2}$
+
+Single Osc, no restriction on N
+
+$\implies \ln(z)=-\ln(1-e^{-h\nu / kT})$
+
+So using $g(\nu)d\nu$ get
+
+$\ln(Z)=\frac{8\pi^5}{45} \left ( \frac{kT}{hc} \right )^3 V$
+
+\end{multicols}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
