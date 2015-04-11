@@ -266,6 +266,8 @@ $\lambda_{max}$ defined by 0=$\frac{d}{d\lambda}[\lambda^5(e^{hc/\lambda kT}-1)]
 
 $\implies \lambda_{max}T=2.90 \times 10^{-3}$
 
+$P_{rad}=$(Area)$\sigma T^4, \sigma=5.67\times 10^{-8}$
+
 $hc/\lambda kT >> 1$
 
 $\implies u(\lambda)d\lambda=V\frac{8\pi kT}{\lambda^4}d\lambda$
@@ -273,6 +275,8 @@ $\implies u(\lambda)d\lambda=V\frac{8\pi kT}{\lambda^4}d\lambda$
 $hc/\lambda kT << 1$
 
 $\implies u(\lambda)d\lambda=V\frac{8\pi hc}{\lambda^5}e^{-hc/\lambda kT}d\lambda$
+
+$Flux=(1-A)F_S/4=\sigma T_S^4, \sigma=5.67\times 10^{-8}$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 $\textbf{Photon Gas}$
@@ -283,6 +287,22 @@ $U=7.55\times 10^{-16}T^4V$
 
 $S=\frac{32\pi^5 kV}{45}\left ( \frac{kT}{hc} \right ) ^3$
 
+Single Osc, no restriction on N
+
+$\implies \ln(z)=-\ln(1-e^{-h\nu / kT})$
+
+So using $g(\nu)d\nu=\frac{8\pi V}{c^3}\nu^2 d\nu$ get
+
+$\ln(Z)=\frac{8\pi^5}{45} \left ( \frac{kT}{hc} \right )^3 V$
+
+$U=kT^2 \left( \frac{\partial \ln Z}{\partial T} \right)_{V,N}=\frac{8 \pi^5 k}{15}\left(\frac{k}{hc}\right)^3 T^4 V$
+
+$\mu=-kT \left( \frac{\partial \ln Z}{\partial N} \right)_{V,T}=0$
+
+$S=U/T+k \ln Z=\frac{32 \pi^5 k}{45}\left(\frac{k}{hc}\right)^3 T^3 V$
+
+$P=kT \left( \frac{\partial \ln Z}{\partial V} \right)_{T,N}=U/3V$
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 $\textbf{BE Condensation}$
 
@@ -292,13 +312,11 @@ $\implies N_{ex}=2.612 V \left ( \frac{2\pi mkT}{h^2} \right )^{3/2}$, this also
 
 $U=0.77 NkT \left ( \frac{T}{T_B}  \right )^{3/2}$
 
-Single Osc, no restriction on N
+$\epsilon_0=\frac{3h^2}{8mV^{2/3}}$
 
-$\implies \ln(z)=-\ln(1-e^{-h\nu / kT})$
+$N_0=N(1-[T/T_C]^{3/2})$
 
-So using $g(\nu)d\nu$ get
-
-$\ln(Z)=\frac{8\pi^5}{45} \left ( \frac{kT}{hc} \right )^3 V$
+$S=1.28Nk[T/T_C]^{3/2}$
 
 \end{multicols}
 \end{document}
